@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDataStructureProject", "MyDataStructureProject\MyDataStructureProject.csproj", "{3C9CC56E-8816-49A9-A678-115408409620}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort_Testing", "Sort_Testing\Sort_Testing.csproj", "{3D7FE849-E129-46E8-8C9E-3E676A7A408E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3C9CC56E-8816-49A9-A678-115408409620}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C9CC56E-8816-49A9-A678-115408409620}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C9CC56E-8816-49A9-A678-115408409620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7FE849-E129-46E8-8C9E-3E676A7A408E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7FE849-E129-46E8-8C9E-3E676A7A408E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7FE849-E129-46E8-8C9E-3E676A7A408E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7FE849-E129-46E8-8C9E-3E676A7A408E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

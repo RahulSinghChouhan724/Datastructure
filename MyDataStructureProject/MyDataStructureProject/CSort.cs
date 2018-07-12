@@ -4,16 +4,11 @@ namespace MyDataStructureProject
 {
     public class CSort
     {
+        public static int arr { get; set; }
 
-        public static class Sort
+        //Integer Sorting function
+        public int[] IntegerSort(int[] arr)
         {
-            public static string arr { get; set; }
-
-        }
-
-        public  int[] GetArr(int[] arr)
-        {
-
             int n = arr.Length;
             for (int i = 0; i < n - 1; i++)
             {
@@ -35,7 +30,22 @@ namespace MyDataStructureProject
 
             }
             return arr;
+        }
 
+
+        //String Sorting function
+        public string[] StringSort(string[] StrArr)
+        {
+            Array.Sort(StrArr);
+            return StrArr;
+        }
+
+
+        //Decimal Sorting function
+        public double[] DoubleSort(Double[]  DblArr)
+        {
+            Array.Sort(DblArr);
+            return DblArr;
         }
     }
 }
