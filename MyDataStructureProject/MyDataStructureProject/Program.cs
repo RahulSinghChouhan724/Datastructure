@@ -2,12 +2,13 @@ using System;
 
 namespace MyDataStructureProject
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        CSort csort = new CSort();
+       public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            int []arr = {11,55,1,13,55,66,2};
+            int[] sortint = csort.GetArr(arr);
         }
     }
 }
