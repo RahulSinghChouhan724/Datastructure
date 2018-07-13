@@ -10,9 +10,9 @@ namespace MyDataStructureProject
             int[] arr = { 11, 55, 1, 13, 55, 66, 2 };
             CSort RequestSort = new CSort();
             //Sorting Integer Value
-            int[] sortedarr = RequestSort.IntegerSort(arr);
+            int[] sortedArr = RequestSort.IntegerSort(arr);
             //Print value of sorted array
-            foreach (int i in arr)
+            foreach (int i in sortedArr)
                 Console.WriteLine(i);
 
             //String Sorting

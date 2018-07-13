@@ -9,25 +9,19 @@ namespace MyDataStructureProject
         //Integer Sorting function
         public int[] IntegerSort(int[] arr)
         {
-            int n = arr.Length;
-            for (int i = 0; i < n - 1; i++)
+            int length = arr.Length;
+            int temp = arr[0];
+            for (int i = 0; i < length; i++)
             {
-                int min_idx = i;
-                for (int j = i; j < n; j++)
+                for (int j = i + 1; j < length; j++)
                 {
-                    if (arr[j] < arr[min_idx])
+                    if (arr[i] > arr[j])
                     {
-                        min_idx = j;
-
-                    }
-                    else
-                    {
-                        int temp = arr[min_idx];
-                        arr[min_idx] = arr[i];
-                        arr[i] = temp;
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
                     }
                 }
-
             }
             return arr;
         }
@@ -36,16 +30,41 @@ namespace MyDataStructureProject
         //String Sorting function
         public string[] StringSort(string[] StrArr)
         {
-            Array.Sort(StrArr);
+            int len = StrArr.Length;
+            for (int i = 1; i < len; i++)
+            {
+                for (int j = 0; j < len - 1; j++)
+                {
+                    if (StrArr[j].CompareTo(StrArr[j + 1]) > 0)
+                    {
+                        String temp = StrArr[i];
+                        StrArr[j] = StrArr[j + 1];
+                        StrArr[j + 1] = temp;
+                    }
+                }
+            }
             return StrArr;
         }
 
 
         //Decimal Sorting function
-        public double[] DoubleSort(Double[]  DblArr)
+        public double[] DoubleSort(Double[] arr)
         {
-            Array.Sort(DblArr);
-            return DblArr;
+            int length = arr.Length;
+            double temp = arr[0];
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = i + 1; j < length; j++)
+                {
+                    if (arr[i] > arr[j])
+                    {
+                        temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            return arr;
         }
     }
 }

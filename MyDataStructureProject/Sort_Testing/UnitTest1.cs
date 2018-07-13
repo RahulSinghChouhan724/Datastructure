@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MyDataStructureProject;
 
 namespace Sort_Testing
 {
@@ -7,8 +8,11 @@ namespace Sort_Testing
     public class UnitTest1
     {
         [TestMethod]
-        public void TheFunctionShould()
+
+        public void TheIntegerSortFunctionShouldTakeOnlyIntegeralue()
         {
+            
+            var             
         }
     }
 }
