@@ -9,10 +9,13 @@ namespace Sort_Testing
     {
         [TestMethod]
 
-        public void TheIntegerSortFunctionShouldTakeOnlyIntegeralue()
+        public void TheIntegerSortFunctionSortingTheArray()
         {
-            
-            var             
+            Program n = new Program();
+            int[] Tarr = { 5, 32, 5, 6 };
+           int [] e= n.IntegerSorting(Tarr);
+            Assert.AreEqual(e[0], 5);
+
         }
     }
 }
