@@ -15,7 +15,7 @@ namespace MyDataStructureProject
             //SortING the array Before Searching
             Program Sort = new Program();
             int[] Sarr = Sort.IntegerSorting(arr);
-            //Earching
+            //Searching
             int i = 0, j;
             int found=0;
             j = Sarr.Length;
