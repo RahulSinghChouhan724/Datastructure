@@ -8,7 +8,13 @@ namespace MyDataStructureProject
         {
 
         }
-
+        public int IntegerSearch(int[] arr, int find)
+        {
+            int[] Arrr = arr;
+            cSearch Binary = new cSearch();
+            var result = Binary.SearchArray(Arrr, find);
+            return result;
+        }
         //Integer Sorting
         public int[] IntegerSorting(int[] Arrr)
         {
