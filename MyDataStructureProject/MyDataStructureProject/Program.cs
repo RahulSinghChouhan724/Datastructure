@@ -35,7 +35,7 @@ namespace MyDataStructureProject
             return SArr;
         }
         //Decimal Sorting
-        public double[] DecimalSorting()
+        public double[] DecimalSorting(double[] Arr)
         {
             CSort RequestDecimalSort = new CSort();
             double[] FArr = { 1.2, 5.50, 22, 5.6, 1.0 };
