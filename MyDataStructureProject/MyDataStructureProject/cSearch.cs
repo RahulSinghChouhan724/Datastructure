@@ -17,21 +17,21 @@ namespace MyDataStructureProject
             int[] Sarr = Sort.IntegerSorting(arr);
             //Searching
             int i = 0, j;
-            int found=0;
+            int found = 0;
             j = Sarr.Length;
 
             while (i <= j)
             {
 
-                if (Sarr[(i+ j) / 2] == find)
+                if (Sarr[(i + j) / 2] == find)
                 {
-                    found = (i+ j) / 2;
+                    found = (i + j) / 2;
                     return found;
                 }
-                else if (Sarr[(i+ j) / 2] < find)
-                    i = ((i+ j) / 2) + 1;
+                else if (Sarr[(i + j) / 2] < find)
+                    i = ((i + j) / 2) + 1;
                 else
-                    j = ((i+ j) / 2) - 1;
+                    j = ((i + j) / 2) - 1;
             }
             return -1;
         }

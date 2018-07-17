@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace MyDataStructureProject
 {
@@ -8,6 +9,9 @@ namespace MyDataStructureProject
         {
 
         }
+
+        public int 
+
         public int IntegerSearch(int[] arr, int find)
         {
             int[] Arrr = arr;
