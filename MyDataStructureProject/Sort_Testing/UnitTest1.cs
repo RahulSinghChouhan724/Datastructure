@@ -40,5 +40,13 @@ namespace Sort_Testing
             int Working = n.IntegerSearch(TestArray, find);
             Assert.AreEqual(Working, 6);
         }
+        [TestMethod]
+        public void TheGenericSortFunctionSortsTheArray()
+        {
+            var n = new Program();
+            int[] Tarr = { 5, 32, 3, 6, -1 };
+            int[] e = n.SortingG(Tarr);
+            Assert.AreEqual(e[0], -1);
+        }
     }
 }

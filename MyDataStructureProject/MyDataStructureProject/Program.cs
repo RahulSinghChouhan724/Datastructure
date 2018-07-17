@@ -9,15 +9,23 @@ namespace MyDataStructureProject
         {
 
         }
-
-        public int 
-
         public int IntegerSearch(int[] arr, int find)
         {
             int[] Arrr = arr;
             cSearch Binary = new cSearch();
             var result = Binary.SearchArray(Arrr, find);
             return result;
+        }
+        public int[] SortingG(int[] Arr)
+        {
+            int[] arr = Arr;
+            var RequestSort = new Generic<int>();
+            //Sorting Integer Value
+            int[] sortedarr = RequestSort.SortingWithGeneric(arr);
+            //Print value of sorted array
+            foreach (int i in arr)
+                Console.WriteLine(i);
+            return arr;
         }
         //Integer Sorting
         public int[] IntegerSorting(int[] Arrr)
