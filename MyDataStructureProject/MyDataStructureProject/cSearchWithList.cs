@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace MyDataStructureProject
 {
-    public class cSearch <T>
+    public class cSearchWithList
     {
-        public static T arr { get; set; }
-
-        public int SearchArray(T[] arr, T find)
+        public int SearchArray(List<int> arr, int find)
         {           
-            for(int i= 0; i< arr.Length; i++)
+            for(int i= 0; i< arr.Count; i++)
             {
                 if (arr[i].Equals(find))
                     return i;
